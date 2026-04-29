@@ -509,16 +509,39 @@ a {
 /* ===== HERO ===== */
 
 
+.hero {
+    min-height: 88vh;
+    background: linear-gradient(
+        135deg,
+        rgba(78, 51, 154, 0.88) 0%,
+        rgba(108, 74, 182, 0.78) 60%,
+        rgba(255, 112, 67, 0.55) 100%
+    ),
+    url('img/pets.jpg') center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
 .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔥 centra todo */
+    justify-content: center;
     width: 100%;
+    padding: 0 24px;
 }
 
 .hero-title {
     font-family: 'Poppins', sans-serif;
     max-width: 700px;
+    margin: 0 auto; /* 🔥 clave */
+    text-align: center;
 }
 
 .hero-line {
@@ -528,12 +551,7 @@ a {
     color: white;
     line-height: 1.05;
     letter-spacing: -0.03em;
-}
-
-.hero-line span {
-    display: inline-block;
-    opacity: 0.6;
-    filter: blur(10px) brightness(30%);
+    text-align: center;
 }
 
 .hero-subtitle {
@@ -541,8 +559,8 @@ a {
     font-size: clamp(16px, 1.5vw, 20px);
     color: white;
     max-width: 480px;
-    margin-top: 32px;
-    line-height: 1.6;
+    margin: 24px auto 0; /* 🔥 centra */
+    text-align: center;
 }
 
 .hero-btn {
