@@ -108,6 +108,11 @@ body {
     opacity: 0.95;
 }
 
+.hero-subtitle2{
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    max-width: 600px;
+    opacity: 0.95;
+}
 .btn-hero {
     background: var(--accent);
     color: #fff;
