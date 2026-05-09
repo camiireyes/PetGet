@@ -400,7 +400,7 @@ footer a {
 footer a:hover {
     color: #fff;
 }
-
+/* Ajuste para el texto del copyright */
 /* ── 10. ANIMATIONS ── */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
