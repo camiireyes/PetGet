@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo petget.ico" >
 
     <style>
         /* Estilos específicos para los recuadros flotantes de estadísticas */
@@ -53,29 +54,75 @@
             height: 500px;
             /* Puedes ajustar esta altura */
         }
+     
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <img src="../img/logos.png" alt="PetGet logo" class="img-nav">PetGet
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+
+        <div class="container-fluid px-5">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center gap-3 fw-bold" href="#">
+
+                <img src="img/logos.png" alt="PetGet logo" class="logo-navbar img-fluid">
+
+                <span class="titulo-logo">
+                    PetGet
+                </span>
+
             </a>
+
+            <!-- BOTON HAMBURGUESA -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
+            <!-- MENU -->
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto text-center gap-1">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/adopciones.html">Adopciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/favoritos.html">Favoritos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+
+                <ul class="navbar-nav ms-auto text-center gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/adopciones.html">
+                            Adopciones
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/voluntarios.html">
+                            Voluntarios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
 
     <section class="hero text-white" id="hero">
@@ -88,7 +135,7 @@
                     </h1>
                     <p class="hero-subtitle">Cada mascota merece un hogar lleno de amor. Descubre compañeros leales
                         esperando por ti.</p>
-                        <br><br>
+                    <br><br>
                     <a href="pages/adopciones.html" class="btn btn-hero">Ver mascotas disponibles</a>
                 </div>
             </div>
@@ -153,66 +200,78 @@
     </section>
 
     <section class="stats" id="stats">
-    <div class="container">
-        <h2 class="section-title text-center text-white">Nuestro alcance</h2>
-        <br>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number" data-target="2847">0</div>
-          <p class="stat-label">Mascotas adoptadas</p>
+        <div class="container">
+            <h2 class="section-title text-center text-white">Nuestro alcance</h2>
+            <br>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2847">0</div>
+                    <p class="stat-label">Mascotas adoptadas</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="156">0</div>
+                    <p class="stat-label">Refugios asociados</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98" data-suffix="%">0</div>
+                    <p class="stat-label">Tasa de éxito</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="12">0</div>
+                    <p class="stat-label">Años de experiencia</p>
+                </div>
+            </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="156">0</div>
-          <p class="stat-label">Refugios asociados</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="98" data-suffix="%">0</div>
-          <p class="stat-label">Tasa de éxito</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="12">0</div>
-          <p class="stat-label">Años de experiencia</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
     <section class="testimonials" id="testimonials">
-    <div class="container">
-      <h2 class="section-title">Historias de Amor</h2>
-      <p class="section-subtitle">Conoce a las familias que encontraron a su compañero perfecto</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-img-wrap">
-            <img src="https://thumbs.dreamstime.com/b/dos-personas-con-un-perro-en-la-correa-al-aire-libre-retroceden-c%C3%A1mara-caminando-una-pareja-de-perros-j%C3%B3venes-y-su-mascota-el-282514872.jpg" alt="Laura con Max" class="testimonial-img" />
-          </div>
-          <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V5H5v8h3zm8 0h3l2-4V5h-6v8h3z"/></svg>
-          <p class="testimonial-quote">Max cambió nuestra vida por completo. Llegó tímido y ahora es el alma de la casa.</p>
-          <p class="testimonial-name">Laura M.</p>
-          <p class="testimonial-detail">Adoptó a Max hace 2 años</p>
+        <div class="container">
+            <h2 class="section-title">Historias de Amor</h2>
+            <p class="section-subtitle">Conoce a las familias que encontraron a su compañero perfecto</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-img-wrap">
+                        <img src="https://thumbs.dreamstime.com/b/dos-personas-con-un-perro-en-la-correa-al-aire-libre-retroceden-c%C3%A1mara-caminando-una-pareja-de-perros-j%C3%B3venes-y-su-mascota-el-282514872.jpg"
+                            alt="Laura con Max" class="testimonial-img" />
+                    </div>
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 17h3l2-4V5H5v8h3zm8 0h3l2-4V5h-6v8h3z" />
+                    </svg>
+                    <p class="testimonial-quote">Max cambió nuestra vida por completo. Llegó tímido y ahora es el alma
+                        de la casa.</p>
+                    <p class="testimonial-name">Laura M.</p>
+                    <p class="testimonial-detail">Adoptó a Max hace 2 años</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-img-wrap">
+                        <img src="https://doctoracats.com.mx/wp-content/uploads/2025/08/Gato-en-compan%CC%83ia.jpg"
+                            alt="Carlos con Luna" class="testimonial-img" />
+                    </div>
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 17h3l2-4V5H5v8h3zm8 0h3l2-4V5h-6v8h3z" />
+                    </svg>
+                    <p class="testimonial-quote">Nunca pensé que un gato podría traer tanta alegría. Luna es mi
+                        compañera perfecta.</p>
+                    <p class="testimonial-name">Carlos R.</p>
+                    <p class="testimonial-detail">Adoptó a Luna hace 8 meses</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-img-wrap">
+                        <img src="https://img.freepik.com/foto-gratis/hombre-jugando-su-perro-jardin_23-2147902072.jpg"
+                            alt="Ana y Pedro con Rocky" class="testimonial-img" />
+                    </div>
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 17h3l2-4V5H5v8h3zm8 0h3l2-4V5h-6v8h3z" />
+                    </svg>
+                    <p class="testimonial-quote">El proceso fue súper fácil y el refugio nos ayudó en todo. Rocky es
+                        ahora parte de la familia.</p>
+                    <p class="testimonial-name">Ana &amp; Pedro</p>
+                    <p class="testimonial-detail">Adoptaron a Rocky hace 1 año</p>
+                </div>
+            </div>
         </div>
-        <div class="testimonial-card">
-          <div class="testimonial-img-wrap">
-            <img src="https://doctoracats.com.mx/wp-content/uploads/2025/08/Gato-en-compan%CC%83ia.jpg" alt="Carlos con Luna" class="testimonial-img" />
-          </div>
-          <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V5H5v8h3zm8 0h3l2-4V5h-6v8h3z"/></svg>
-          <p class="testimonial-quote">Nunca pensé que un gato podría traer tanta alegría. Luna es mi compañera perfecta.</p>
-          <p class="testimonial-name">Carlos R.</p>
-          <p class="testimonial-detail">Adoptó a Luna hace 8 meses</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-img-wrap">
-            <img src="https://img.freepik.com/foto-gratis/hombre-jugando-su-perro-jardin_23-2147902072.jpg" alt="Ana y Pedro con Rocky" class="testimonial-img" />
-          </div>
-          <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V5H5v8h3zm8 0h3l2-4V5h-6v8h3z"/></svg>
-          <p class="testimonial-quote">El proceso fue súper fácil y el refugio nos ayudó en todo. Rocky es ahora parte de la familia.</p>
-          <p class="testimonial-name">Ana &amp; Pedro</p>
-          <p class="testimonial-detail">Adoptaron a Rocky hace 1 año</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
     <section class="featured-section">
@@ -307,42 +366,42 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-        const stats = document.querySelectorAll('.stat-number');
-        const speed = 200; // Cuanto más alto, más lento
+            const stats = document.querySelectorAll('.stat-number');
+            const speed = 200; // Cuanto más alto, más lento
 
-        const animateStats = () => {
-            stats.forEach(stat => {
-                const updateCount = () => {
-                    const target = +stat.getAttribute('data-target');
-                    const count = +stat.innerText.replace('%', ''); // Quitamos el % para calcular
-                    const suffix = stat.getAttribute('data-suffix') || '';
-                    
-                    const inc = target / speed;
+            const animateStats = () => {
+                stats.forEach(stat => {
+                    const updateCount = () => {
+                        const target = +stat.getAttribute('data-target');
+                        const count = +stat.innerText.replace('%', ''); // Quitamos el % para calcular
+                        const suffix = stat.getAttribute('data-suffix') || '';
 
-                    if (count < target) {
-                        stat.innerText = Math.ceil(count + inc) + suffix;
-                        setTimeout(updateCount, 15);
-                    } else {
-                        stat.innerText = target + suffix;
-                    }
-                };
-                updateCount();
-            });
-        };
+                        const inc = target / speed;
 
-        // Opción simple: Ejecutar al cargar
-        // animateStats(); 
+                        if (count < target) {
+                            stat.innerText = Math.ceil(count + inc) + suffix;
+                            setTimeout(updateCount, 15);
+                        } else {
+                            stat.innerText = target + suffix;
+                        }
+                    };
+                    updateCount();
+                });
+            };
 
-        // Opción Pro: Ejecutar solo cuando el usuario llega a esa sección (Intersection Observer)
-        const observer = new IntersectionObserver((entries) => {
-            if(entries[0].isIntersecting) {
-                animateStats();
-                observer.disconnect(); // Para que solo se anime una vez
-            }
-        }, { threshold: 0.5 });
+            // Opción simple: Ejecutar al cargar
+            // animateStats(); 
 
-        observer.observe(document.querySelector('#stats'));
-    });
+            // Opción Pro: Ejecutar solo cuando el usuario llega a esa sección (Intersection Observer)
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    animateStats();
+                    observer.disconnect(); // Para que solo se anime una vez
+                }
+            }, { threshold: 0.5 });
+
+            observer.observe(document.querySelector('#stats'));
+        });
     </script>
 </body>
 
