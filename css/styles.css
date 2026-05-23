@@ -61,7 +61,7 @@ body {
     color: #fff !important;
 }
 
-/* ── 3. HERO SECTION ── */
+/* ──  HERO SECTION ── */
 .hero {
     min-height: 88vh;
     background: linear-gradient(135deg, rgba(78, 51, 154, 0.88) 0%, rgba(108, 74, 182, 0.78) 60%, rgba(255, 112, 67, 0.55) 100%),
@@ -131,7 +131,7 @@ body {
     color: #fff;
 }
 
-/* ── 4. ELEMENTOS COMUNES DE SECCIÓN ── */
+/* ── ELEMENTOS COMUNES DE SECCIÓN ── */
 .section-label {
     display: inline-block;
     background: var(--purple-pale);
@@ -176,24 +176,24 @@ body {
 }
 
 .pet-carousel .carousel-indicators [data-bs-target] {
-    width: 35px;         /* Más anchas */
-    height: 7px;         /* Un poco más gruesas para que parezcan píldoras */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: rgba(255, 255, 255, 0.4); /* Color desactivado suave */
-    border: none;        /* Quita el borde por defecto de Bootstrap */
+    width: 35px;         
+    height: 7px;       
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: none;        
     margin: 0 6px;
-    transition: all 0.4s ease; /* Animación suave al cambiar */
-    opacity: 1;          /* Forzamos opacidad completa */
+    transition: all 0.4s ease; 
+    opacity: 1;         
 }
 
 /* Estilo para la barra activa */
 .pet-carousel .carousel-indicators .active {
-    width: 60px; /* Se estira cuando está activa (efecto muy moderno) */
+    width: 60px; /* Se estira cuando está activa  */
     background: linear-gradient(to right, var(--accent), #FFB300) !important;
     box-shadow: 0 0 15px rgba(255, 112, 67, 0.6);
 }
 
-/* Ajuste extra para las flechas del carrusel si se ven raras */
+/* Ajuste extra para las flechas del carrusel*/
 .pet-carousel .carousel-control-prev-icon,
 .pet-carousel .carousel-control-next-icon {
     width: 1.5rem;
@@ -201,7 +201,7 @@ body {
 }
 
 .carousel-item {
-    height: 500px; /* Ajustado según tu estilo inline del HTML */
+    height: 500px; 
 }
 
 .carousel-item img {
@@ -253,7 +253,7 @@ body {
     transform: scale(1.2);
 }
 
-/* ── 6. STATS SECTION ── */
+/* ──  STATS SECTION ── */
 .stats {
     padding: 100px 0;
     background: linear-gradient(180deg, var(--purple) 0%, var(--purple-dark) 100%);
@@ -282,7 +282,7 @@ body {
     margin-top: 8px;
 }
 
-/* ── 7. TESTIMONIALS ── */
+/* ──  TESTIMONIALS ── */
 .testimonials {
     padding: 100px 0;
     background: #fafafa;
@@ -328,7 +328,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* ── 8. FEATURED PETS (CARDS) ── */
+/* ──  FEATURED PETS (CARDS) ── */
 .featured-section {
     padding: 100px 0;
     background: var(--purple-pale);
@@ -383,7 +383,7 @@ body {
     color: #fff;
 }
 
-/* ── 9. FOOTER ── */
+/* ──  FOOTER ── */
 footer {
     background: var(--purple-dark);
     color: rgba(255, 255, 255, 0.9);
@@ -406,7 +406,7 @@ footer a:hover {
     color: #fff;
 }
 /* Ajuste para el texto del copyright */
-/* ── 10. ANIMATIONS ── */
+/* ──  ANIMATIONS ── */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -481,4 +481,42 @@ footer a:hover {
     border-radius: 50%;
 
     margin-right: 10px;
+}
+
+.sponsors-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sponsor-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-logo {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sponsor-logo {
+        width: 130px;
+    }
+
+    .sponsors-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsor-logo {
+        width: 100px;
+    }
 }
