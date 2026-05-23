@@ -125,8 +125,7 @@ for(let i=0; i<50; i++){
         badge,
         description:"Listo para encontrar un hogar lleno de amor",
         personality:personalities[i % personalities.length],
-        health:"Vacunado y en buen estado",
-        special:(i % 7 === 0) ? "Requiere atención especial" : "Ninguna",
+        health:"Vacunado y en buen estado", 
         image
     });
 }
