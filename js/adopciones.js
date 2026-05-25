@@ -3,9 +3,9 @@ const names = [
     "Buddy", "Daisy", "Zeus", "Thor", "Bella", "Lucy", "Oliver", "Chloe", "Jack", "Loki",
     "Kiara", "Bruno", "Rex", "Maya", "Kira", "Oreo", "Nina", "Bobby", "Sasha", "Tom",
     "Jerry", "Apollo", "Shadow", "Ginger", "Pepper", "Blue", "Ruby", "Sam", "Hunter", "Layla",
-    "Zoe", "Prince", "Mocha", "Lucky", "Angel", "Rocco", "Mimi", "Bambi", "Dusty", "Fluffy",
+    "Zoe", "Prince", "Mocha", "Lucky", "Angel", "Rocco", "Mimi", "Bambi", "Kaiser", "Fluffy",
     "Bandit", "Rascal", "Patches", "Pixel", "Zara", "Spike", "Ember", "Sage", "Drake", "Fern",
-    "Ash", "Nyx", "Cleo", "Rune", "Zephyr", "Basil", "Echo", "Onyx", "Flint", "Moss"
+    "Ranger", "Nyx", "Cleo", "Rune", "Zephyr", "Basil", "Echo", "Onyx", "Flint", "Moss"
 ];
 
 const dogImgs = [
@@ -17,9 +17,9 @@ const dogImgs = [
 "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_1280.jpg",
 "https://cdn.pixabay.com/photo/2023/03/02/14/46/pit-bull-7825554_1280.jpg",
 "https://cdn.pixabay.com/photo/2016/05/09/10/42/weimaraner-1381186_1280.jpg",
-"https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_1280.jpg",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1-0lrZ9oX9DcgWLzJPGlLgi1akauv98eU2A&s",
 "https://cdn.pixabay.com/photo/2025/06/20/10/47/dog-9670619_1280.jpg",
-"https://cdn.pixabay.com/photo/2022/01/13/10/24/dog-6934895_1280.jpg",
+"https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/05/xoloescuincle-1024x640.jpg",
 "https://cdn.pixabay.com/photo/2022/04/29/00/27/puppy-7162203_1280.jpg",
 "https://cdn.pixabay.com/photo/2023/01/03/16/00/dog-7694676_1280.jpg"
 ];
