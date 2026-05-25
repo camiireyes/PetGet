@@ -293,7 +293,9 @@ document.addEventListener("submit", function(e){
         e.preventDefault();
 
         document.getElementById("viewForm").style.display = "none";
+        document.getElementById("adoptionForm").reset();
         document.getElementById("viewSuccess").style.display = "block";
+        
     }
 });
 
