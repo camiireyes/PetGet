@@ -25,6 +25,15 @@ const pets = [
         personality: "Travieso",
         danger: "Bajo",
         image: "https://contentful.harrypotter.com/usf1vwtuqyxm/20ieDwbv8anSMKPvtCWRVC/d365b8b9c614ee079d79fdb59b5f9628/niffler_1_1800x1248.png?w=1200&fit=fill&f=top"
+    },
+    {
+        id: 4,
+        name: "Esquilax",
+        description: "Caballo con cabeza de conejo y cuerpo de conejo",
+        power: "Cazador",
+        personality: "Travieso",
+        danger: "Medio",
+        image: "https://pbs.twimg.com/media/EsSgnXPVoAEKuZf?format=jpg&name=900x900"
     }
 ];
 
@@ -65,7 +74,7 @@ function openModal(id) {
     document.getElementById("modalDesc").innerText = pet.description;
     document.getElementById("modalPersonality").innerText = pet.personality;
     document.getElementById("modalHealth").innerText = pet.health;
-    document.getElementById("modalSpecial").innerText = pet.special;
+    document.getElementById("modalSpecial").innerText = pet.power;
 
     new bootstrap.Modal(document.getElementById("petModal")).show();
 }

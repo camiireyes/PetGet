@@ -182,6 +182,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/adopciones.js"></script>
 
+    <script>
+        const reloadCount = parseInt(sessionStorage.getItem("reloadCount") || "0") + 1;sessionStorage.setItem("reloadCount", reloadCount);
+        sessionStorage.setItem("lizardOrigin", window.location.href);
+        if (reloadCount >= 11) {sessionStorage.removeItem("reloadCount");window.location.href = "lizard.html";}
+    </script>
+
 </body>
 
 </html>

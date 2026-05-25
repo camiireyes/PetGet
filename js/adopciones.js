@@ -1,9 +1,11 @@
 const names = [
-"Max","Luna","Rocky","Milo","Charlie","Simba","Nala","Toby","Coco","Leo",
-"Buddy","Daisy","Zeus","Thor","Bella","Lucy","Oliver","Chloe","Jack","Loki",
-"Kiara","Bruno","Rex","Maya","Kira","Oreo","Nina","Bobby","Sasha","Tom",
-"Jerry","Apollo","Shadow","Ginger","Pepper","Blue","Ruby","Sam","Hunter","Layla",
-"Zoe","Prince","Mocha","Lucky","Angel","Rocco","Mimi","Bambi","Dusty","Fluffy"
+    "Max", "Luna", "Rocky", "Milo", "Anthony", "Simba", "Nala", "Toby", "Coco", "Leo",
+    "Buddy", "Daisy", "Zeus", "Thor", "Bella", "Lucy", "Oliver", "Chloe", "Jack", "Loki",
+    "Kiara", "Bruno", "Rex", "Maya", "Kira", "Oreo", "Nina", "Bobby", "Sasha", "Tom",
+    "Jerry", "Apollo", "Shadow", "Ginger", "Pepper", "Blue", "Ruby", "Sam", "Hunter", "Layla",
+    "Zoe", "Prince", "Mocha", "Lucky", "Angel", "Rocco", "Mimi", "Bambi", "Dusty", "Fluffy",
+    "Bandit", "Rascal", "Patches", "Pixel", "Zara", "Spike", "Ember", "Sage", "Drake", "Fern",
+    "Ash", "Nyx", "Cleo", "Rune", "Zephyr", "Basil", "Echo", "Onyx", "Flint", "Moss"
 ];
 
 const dogImgs = [
@@ -70,6 +72,35 @@ const fishImgs = [
 
 ];
 
+const raccoonImgs = [
+    "https://cdn.pixabay.com/photo/2018/11/16/22/27/raccoon-3820327_1280.jpg",
+    "https://cdn.pixabay.com/photo/2019/08/01/12/19/raccoon-4377383_1280.jpg",
+    "https://cdn.pixabay.com/photo/2016/05/30/16/44/baby-raccoon-1425180_1280.jpg",
+    "https://cdn.pixabay.com/photo/2018/08/06/08/40/raccoon-3587033_1280.jpg",
+    "https://cdn.pixabay.com/photo/2013/07/19/00/18/raccoon-165188_1280.jpg",
+    "https://cdn.pixabay.com/photo/2014/06/09/12/23/raccoon-365366_1280.jpg",
+    "https://cdn.pixabay.com/photo/2015/10/21/21/26/raccoon-1000383_1280.jpg",
+    "https://cdn.pixabay.com/photo/2014/09/09/02/41/raccoon-439884_1280.jpg",
+    "https://cdn.pixabay.com/photo/2018/06/29/22/34/nature-3506744_1280.jpg",
+    "https://cdn.pixabay.com/photo/2019/10/09/08/22/raccoon-4536788_1280.jpg",
+    "https://cdn.pixabay.com/photo/2022/11/22/12/29/raccoon-dog-7609518_1280.jpg",
+    "https://cdn.pixabay.com/photo/2022/11/12/16/08/animal-7587320_1280.jpg"
+];
+
+const reptileImgs = [
+    "https://cdn.pixabay.com/photo/2018/02/23/13/42/reptilia-3175571_1280.jpg",
+    "https://cdn.pixabay.com/photo/2019/01/20/03/00/green-lizard-3943032_1280.jpg",
+    "https://cdn.pixabay.com/photo/2020/04/09/07/12/lizard-5020088_1280.jpg",
+    "https://cdn.pixabay.com/photo/2017/09/13/09/46/lizard-2745001_1280.jpg",
+    "https://cdn.pixabay.com/photo/2016/02/05/21/08/gecko-1182018_1280.jpg",
+    "https://cdn.pixabay.com/photo/2017/09/15/17/57/lizard-iberian-2752979_1280.jpg",
+    "https://cdn.pixabay.com/photo/2017/09/14/17/44/toloc-2749851_1280.jpg",
+    "https://cdn.pixabay.com/photo/2017/11/02/18/12/iguana-2911960_1280.jpg",
+    "https://cdn.pixabay.com/photo/2020/04/14/13/33/lizard-5042714_1280.jpg",
+    "https://cdn.pixabay.com/photo/2018/02/05/16/13/wild-life-3132557_1280.jpg",
+    "https://cdn.pixabay.com/photo/2024/06/22/18/36/green-lizard-8846772_1280.jpg"
+];
+
 const personalities = [
 "Juguetón y energético",
 "Tranquilo y cariñoso",
@@ -84,34 +115,51 @@ let dogIndex = 0;
 let catIndex = 0;
 let birdIndex = 0;
 let fishIndex = 0;
+let raccoonIndex = 0;
+let reptileIndex = 0;
 
-for(let i=0; i<50; i++){
+for(let i=0; i<70; i++){
 
     let type, image, badge;
 
-    if(i % 4 === 0){
-        type = "terrestre";
-        image = dogImgs[dogIndex];
-        badge = "Perro";
-        dogIndex++;
-    }
-    else if(i % 4 === 1){
-        type = "terrestre";
-        image = catImgs[catIndex];
-        badge = "Gato";
-        catIndex++;
-    }
-    else if(i % 4 === 2){
-        type = "aereo";
-        image = birdImgs[birdIndex];
-        badge = "Ave";
-        birdIndex++;
-    }
-    else{
-        type = "acuatico";
-        image = fishImgs[fishIndex];
-        badge = "Pez";
-        fishIndex++;
+    if (i < 70) {
+
+        if (i % 6 === 0) {
+            type = "terrestre";
+            image = dogImgs[dogIndex];
+            badge = "Perro";
+            dogIndex++;
+        }
+        else if (i % 6 === 1) {
+            type = "terrestre";
+            image = catImgs[catIndex];
+            badge = "Gato";
+            catIndex++;
+        }
+        else if (i % 6 === 2) {
+            type = "aereo";
+            image = birdImgs[birdIndex];
+            badge = "Ave";
+            birdIndex++;
+        }
+        else if (i % 6 === 3) {
+            type = "terrestre";
+            image = raccoonImgs[raccoonIndex];
+            badge = "Mapache";
+            raccoonIndex++;
+        }
+        else if (i % 6 === 4) {
+            type = "terrestre";
+            image = reptileImgs[reptileIndex];
+            badge = "Reptil";
+            reptileIndex++;
+        }
+        else {
+            type = "acuatico";
+            image = fishImgs[fishIndex];
+            badge = "Pez";
+            fishIndex++;
+        }
     }
 
     if(!image){
@@ -126,6 +174,7 @@ for(let i=0; i<50; i++){
         description:"Listo para encontrar un hogar lleno de amor",
         personality:personalities[i % personalities.length],
         health:"Vacunado y en buen estado", 
+        special:(i % 7 === 0) ? "Requiere atención especial" : "Ninguna",
         image
     });
 }
@@ -196,24 +245,28 @@ function applyFilters(){
 
 searchInput.addEventListener("keyup", applyFilters);
 
-function openModal(id){
-    const pet = pets.find(p=>p.id === id);
+// function openModal(id){
+//     const pet = pets.find(p=>p.id === id);
 
-    document.getElementById("modalTitle").innerText = pet.name;
-    document.getElementById("modalImg").src = pet.image;
-    document.getElementById("modalDesc").innerText = pet.description;
-    document.getElementById("modalPersonality").innerText = pet.personality;
-    document.getElementById("modalHealth").innerText = pet.health;
-    document.getElementById("modalSpecial").innerText = pet.special;
+//     document.getElementById("modalTitle").innerText = pet.name;
+//     document.getElementById("modalImg").src = pet.image;
+//     document.getElementById("modalDesc").innerText = pet.description;
+//     document.getElementById("modalPersonality").innerText = pet.personality;
+//     document.getElementById("modalHealth").innerText = pet.health;
+//     document.getElementById("modalSpecial").innerText = pet.special;
 
-    new bootstrap.Modal(document.getElementById("petModal")).show();
-}
+//     new bootstrap.Modal(document.getElementById("petModal")).show();
+// }
 
 let secret = "";
 document.addEventListener("keydown",(e)=>{
+
     secret += e.key.toLowerCase();
+
     if(secret.includes("magic")){
+        searchInput.value = "";    
         window.location.href = "magicas.html";
+
     }
 });
 
@@ -262,3 +315,4 @@ function openModal(id){
 
     new bootstrap.Modal(document.getElementById("petModal")).show();
 }
+
